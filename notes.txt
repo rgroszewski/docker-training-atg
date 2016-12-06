@@ -1,0 +1,4 @@
+Other container technologies
+OpenContainer - https://www.opencontainers.org/
+CoreOS - https://coreos.com/
+
