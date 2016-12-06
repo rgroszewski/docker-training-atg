@@ -4,3 +4,53 @@ CoreOS - https://coreos.com/
 
 Docker tools set
 Docker Universal Control Plane - https://docs.docker.com/datacenter/ucp/1.1/
+Kitematic - https://kitematic.com/
+Docker Cloud - https://www.docker.com/products/docker-cloud
+Docker Datacenter - https://www.docker.com/products/docker-datacenter
+    - commercial supported Docker engine (CS Engine)
+    - docker trusted registry
+    - universal control Plane
+    - RBAC
+
+
+containerd - https://containerd.tools/
+runC - https://runc.io/
+
+Commands
+docker version
+docker images
+
+docker ps -a --no-trunc display long instead shot id
+docker ps -q display only id
+docker ps -l last container started
+
+--filter
+docker ps -a --filter "existed=1"
+
+docker info
+
+-d flag detached mode
+
+-P flag automatic port mapping
+-p manual port mapping
+
+docker attach - attaching to docker container running in background
+
+docker exec -it [contId] bash
+
+docker logs - process 1 output (stdout/sterr)
+docker logs --tail 5 -f [contId]
+
+docker stop - SIGTERM
+docker kill - SIGKILL
+
+docker started [contId]
+-a to attach to it 
+
+docker inspect - details about container
+docker inspect --format - for json formating
+
+docker rm [condId] - remove container
+docker rm -f [contId] - delete container which is still running
+
+docker rm $(docker ps -aq)
